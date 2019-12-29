@@ -1,0 +1,3 @@
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/cmake-build-debug/CMakeFiles/genetic.dir
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/cmake-build-debug/CMakeFiles/edit_cache.dir
