@@ -15,8 +15,11 @@ public:
     std::vector<int> &bydays;
 
     Distribution(std::vector<std::vector<int>> &_data, std::vector<int> &_byfams,
-            std::vector<int> _bydays);
+            std::vector<int> &_bydays);
+    Distribution(std::vector<std::vector<int>> &_data, std::vector<int> &_byfams,
+            std::vector<int> &_bydays, bool nothing);
     void evaluate();
+
     Distribution& operator = (Distribution d2);
 
 private:

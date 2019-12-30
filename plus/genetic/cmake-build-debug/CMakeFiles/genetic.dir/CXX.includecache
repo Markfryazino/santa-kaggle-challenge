@@ -24,27 +24,11 @@ vector
 funcs.h
 /home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
 
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Population.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
 vector
+-
+string
 -
 Distribution.h
 /home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
-funcs.h
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
-
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
-vector
--
-
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/main.cpp
-iostream
--
-vector
--
-Population.h
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Population.h
-Distribution.h
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
-funcs.h
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
 

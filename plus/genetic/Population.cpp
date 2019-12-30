@@ -10,5 +10,5 @@ Population::Population(std::vector<std::vector<int>> &_data) : data(_data) {
     samples = {};
     std::vector<int> init = {};
     for (int i = 0; i < SIZE; ++i)
-        samples.push_back(Distribution(data, init, init));
+        samples.emplace_back(Distribution(data, init, init));
 }

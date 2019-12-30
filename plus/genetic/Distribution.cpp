@@ -19,13 +19,13 @@ double Distribution::familyGift(int date, int index, const int feesForAll[11],
 double Distribution::penalty() {
     double res = 0;
     for (int d = 0; d < 100; ++d) {
-        double first = (this->bydays[d] - 125) / 400.;
+        double first = (bydays[d] - 125.) / 400.;
         double s = 0;
-        for (int j = 0; j < 5; ++j) {
+        for (int j = 1; j < 6; ++j) {
             int ind = d + j > 99 ? 99 : d + j;
             double abs = bydays[d] - bydays[ind];
             abs = abs > 0 ? abs : -abs;
-            s += pow(bydays[d], (0.5 + abs / 50.) / (j + 1) / (j + 1));
+            s += pow(bydays[d], (0.5 + abs / 50.)) / j / j;
         }
         res += s * first;
     }
@@ -33,7 +33,7 @@ double Distribution::penalty() {
 }
 
 Distribution::Distribution(std::vector<std::vector<int>> &_data,
-        std::vector<int> &_byfams, std::vector<int> _bydays) : data(_data),
+        std::vector<int> &_byfams, std::vector<int> &_bydays) : data(_data),
         byfams(_byfams), bydays(_bydays) {
     srand(time(0));
     this->data = _data;
@@ -80,4 +80,9 @@ void Distribution::evaluate() {
 
 Distribution &Distribution::operator=(Distribution d2) {
     return d2;
+}
+
+Distribution::Distribution(std::vector<std::vector<int>> &_data, std::vector<int> &_byfams,
+        std::vector<int> &_bydays, bool nothing) : data(_data), byfams(_byfams), bydays(_bydays) {
+    //Nothing
 }
