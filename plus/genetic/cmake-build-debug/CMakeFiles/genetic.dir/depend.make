@@ -3,6 +3,7 @@
 
 CMakeFiles/genetic.dir/Distribution.cpp.o: ../Distribution.cpp
 CMakeFiles/genetic.dir/Distribution.cpp.o: ../Distribution.h
+CMakeFiles/genetic.dir/Distribution.cpp.o: ../Population.h
 CMakeFiles/genetic.dir/Distribution.cpp.o: ../funcs.h
 
 CMakeFiles/genetic.dir/Population.cpp.o: ../Distribution.h
@@ -11,6 +12,7 @@ CMakeFiles/genetic.dir/Population.cpp.o: ../Population.h
 CMakeFiles/genetic.dir/Population.cpp.o: ../funcs.h
 
 CMakeFiles/genetic.dir/funcs.cpp.o: ../Distribution.h
+CMakeFiles/genetic.dir/funcs.cpp.o: ../Population.h
 CMakeFiles/genetic.dir/funcs.cpp.o: ../funcs.cpp
 CMakeFiles/genetic.dir/funcs.cpp.o: ../funcs.h
 

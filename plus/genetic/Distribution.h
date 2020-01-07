@@ -3,6 +3,8 @@
 //
 #include <vector>
 #include "funcs.h"
+#include "Population.h"
+#include <string>
 
 #ifndef GENETIC_DISTRIBUTION_H
 #define GENETIC_DISTRIBUTION_H
@@ -21,6 +23,9 @@ public:
     void evaluate();
 
     Distribution& operator = (Distribution d2);
+    Distribution mutate(std::pair<std::vector<int>, std::vector<int>>& slot);
+    void toFile(std::string file);
+    Distribution crossbreed(Distribution& other, std::pair<std::vector<int>, std::vector<int>>& slot);
 
 private:
     double familyGift(int date, int index, const int feesForAll[11], const int feesForEach[11]);

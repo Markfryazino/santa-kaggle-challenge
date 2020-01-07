@@ -13,10 +13,14 @@
 class Population {
 public:
     const int SIZE = 100;
+    int worstIndex, bestIndex;
+    double worstScore, bestScore;
     std::vector<std::vector<int>> &data;
     std::vector<Distribution> samples;
+    std::vector<std::pair<std::vector<int>, std::vector<int>>> values;
 
     Population(std::vector<std::vector<int>> &_data);
+    void step();
 };
 
 

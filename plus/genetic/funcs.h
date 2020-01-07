@@ -10,6 +10,6 @@
 #include "Distribution.h"
 
 void readData(std::vector<std::vector<int>> &data);
-Distribution readFromFile(std::string file, std::vector<std::vector<int>> &data);
+Distribution readFromFile(std::string file, std::vector<std::vector<int>> &data, std::pair<std::vector<int>, std::vector<int>>& slot);
 
 #endif //GENETIC_FUNCS_H

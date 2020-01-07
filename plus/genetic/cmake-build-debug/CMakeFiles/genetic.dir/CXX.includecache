@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.cpp
-Distribution.h
-/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
-cmath
--
-random
--
-algorithm
--
-time.h
--
-
 /home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
 vector
 -
+funcs.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
+Population.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Population.h
+string
+-
+
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Population.h
+vector
+-
+Distribution.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
 funcs.h
 /home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
 
@@ -31,4 +31,20 @@ string
 -
 Distribution.h
 /home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
+
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/main.cpp
+iostream
+-
+vector
+-
+Population.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Population.h
+Distribution.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/Distribution.h
+random
+-
+funcs.h
+/home/data_sapiens/programs/challenges/santa_2019_2020/plus/genetic/funcs.h
+string
+-
 
