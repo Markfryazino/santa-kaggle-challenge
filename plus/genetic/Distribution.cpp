@@ -9,6 +9,8 @@
 #include <iostream>
 #include <fstream>
 
+extern std::string FILE_PATH;
+
 double Distribution::familyGift(int date, int index, const int feesForAll[11],
         const int feesForEach[11]) {
     int num = this->data[index][10];
@@ -112,7 +114,7 @@ Distribution Distribution::mutate(std::pair<std::vector<int>, std::vector<int>>&
 }
 
 void Distribution::toFile(std::string file) {
-    std::ofstream out("/home/data_sapiens/programs/challenges/santa_2019_2020/data/" + file);
+    std::ofstream out(FILE_PATH + file);
     for (int i = 0; i < 6000; ++i)
         out << byfams[i] + 1 << "\n";
 }

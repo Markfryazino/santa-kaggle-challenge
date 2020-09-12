@@ -8,8 +8,10 @@
 #include <string>
 #include "Distribution.h"
 
+std::string FILE_PATH;
+
 void readData(std::vector<std::vector<int>> &data) {
-    std::ifstream in("/home/data_sapiens/programs/challenges/santa_2019_2020/data/data.txt");
+    std::ifstream in(FILE_PATH + "/data.txt");
     for (int i = 0; i < 6000; ++i)
         for (int j = 0; j < 11; ++j)
             in >> data[i][j];
@@ -18,7 +20,7 @@ void readData(std::vector<std::vector<int>> &data) {
 Distribution readFromFile(std::string file, std::vector<std::vector<int>>& data, std::pair<std::vector<int>, std::vector<int>>& slot) {
     Distribution dist(data, slot.first, slot.second, false);
     std::vector<int> byfams(6000);
-    std::ifstream in("/home/data_sapiens/programs/challenges/santa_2019_2020/data/" + file);
+    std::ifstream in(FILE_PATH + file);
     for (int i = 0; i < 6000; ++i)
         in >> byfams[i];
     std::vector<int> bydays(100, 0);

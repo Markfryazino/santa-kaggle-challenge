@@ -6,6 +6,9 @@
 #include "Distribution.h"
 #include <algorithm>
 #include <vector>
+#include <string>
+
+extern std::string FILE_PATH;
 
 Population::Population(std::vector<std::vector<int>> &_data) : data(_data) {
     samples = {};

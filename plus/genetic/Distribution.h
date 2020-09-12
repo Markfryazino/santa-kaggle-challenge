@@ -26,7 +26,6 @@ public:
     Distribution mutate(std::pair<std::vector<int>, std::vector<int>>& slot);
     void toFile(std::string file);
     Distribution crossbreed(Distribution& other, std::pair<std::vector<int>, std::vector<int>>& slot);
-
 private:
     double familyGift(int date, int index, const int feesForAll[11], const int feesForEach[11]);
     double penalty();
