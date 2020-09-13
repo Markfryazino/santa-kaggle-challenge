@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/genetic.dir/main.cpp.o CMakeFiles/genetic.dir/Distribution.cpp.o CMakeFiles/genetic.dir/Population.cpp.o CMakeFiles/genetic.dir/funcs.cpp.o  -o genetic 
